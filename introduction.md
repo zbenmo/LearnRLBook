@@ -6,10 +6,10 @@ We've already associated a rank for each of the books in the list
 We want to present them to the user in a sorted
 order so that the best recommendation will be placed on the top and so on (ordered ascending by the rank).
 We have some good recepies for doing that (sorting objects in a list based on some key).
-We call those recepies algorithms.
+We call those recepies __algorithms__.
 Those algorithms are a series of software instructions to the machine what to do step by step.
 
-You've probably heard of Machine Learning (ML). For example to distinguis between two identical twins.
+You've probably heard of __Machine Learning__ (ML). For example to distinguis between two identical twins.
 How to develop an algorithm that, given images captured by a digital camera,
 can tell if we're looking at Bob or at Charlie? Maybe we can come up with an algorithm that does that.
 It is certainly not going to be easy (try this mentally exercise)
@@ -27,9 +27,9 @@ and train another model. While it may be a little bit time consuming and may inv
 the new set, to train, and to maintain a second model,
 it is still very efficient way to having a machine that automaticlly achieve such complex task.
 
-As a side note, the training of a specific model class is often an algorithm in the classic context 
+As a side note, the training of a specific __model class__ is often an algorithm in the classic context 
 and so is the related prediction process. But the learning is achieved by adjusting parameters and those are determined
-from examples by means of optimizing a goal or minimizing discrepancies among desired predictions and current predictions. 
+from examples by means of optimizing a goal or minimizing discrepancies among desired predictions and current predictions. Examples for model classes are a __Random Forest__ and a __Neural Network__.
 
 We can prove mathematically that for example the Quick-Sort algorithm will always succeed
 in ordering the books in the
@@ -59,7 +59,12 @@ The financial institution is constantly looking for the best setting as to balan
 If the checking was not automated, we could not have the online banking and shoping that we enjoy these days.
 The scale of operations requires automation.
 
-Where does Reinforcement Learning (RL) fit into this? RL is a ML way of learning the control logic for automated-agents.
+Where does __Reinforcement Learning__ (RL) fit into those exising development in software engineering? RL is a ML way of learning the control logic for automated-agents.
 What we learn with RL is a policy that the agent then follows and thus achieves one or more
 desired behavior in the environment in which it is operating.
 We will dive more into the relations among RL and other types of ML and software paradigms in  [Chapter 1](chapter-01.md).
+
+Few more words on ML. When I was first introduced to ML and __Data Science__, I came to believe that we have __Supervised Learning__, __Unsupervised Learning__, and the ultimate RL. At the time, I was scared away from RL, and was encouraged to study first supervised learning, and if I am brave enough then maybe also unsupervised learning. Supervised learning is the settings in which we learn to predict based on labeled examples, for example, house price from some information about the house and previous examples with prices. Another common example is spam filterring. Given a mail should it go to the spam folder or to the inbox. This can be done by examinging the text the email and comparing it to previously categoried emails. When we described above distiguising between twins, is was presented as supervised learning. Unsupervised learning is a setting where we do not have labels. We can still do a lot by studying the structure of the data, finding patterns, observing natural clusters, and much more. There are many ways to solve a computation challenge with a combination of methods from both paradigms. For example, sometimes we can destill features with unsupervised learning to be used in a later stage of the __pipeline__ with supervised learning. In __Natural Language Processing__ (NLP), a first step can be learning a __Language Model__. Language model is for example, the ability to guess well the next word in a partial sentence. When language model is achieved it can help with other NLP tasks. The way we learn language models, is by automaticly creating "labels" from a large corpose of text. There is no necessarily a label, but rather a word that appears in an example text is used as the label. And hence learning language model, can be considered unsupervied learning. Now that I dared to touch also RL, I see that it is not that fritening. Also I see that it is not a clear cut. The settings and tools are somewhat different, yet given a task, one can consider sometimes addressing it as supervised learning, as RL, or any combination of steps in a pipeline. For example, if we want to present an advertisement to a visitor, we can rank few candidate ads, and pick the best. We can also decide to create a smart __recommender system__, that chooses actions on additional commemrcial and ethical considerations. The system need to be controlled, and learn by "interacting" with the visitors in the numerous sessions. Recommender systems, may be built on __Collaborative Filtering__ paradigm, which is an unsupervised learning for finding similar users and similar prefereces, or the latent "genres" and "themes" of the items, and what users should be shown which.
+More than this. When using RL, we'll need sometimes to use supervied and unsupervised learning. The other direction, may also exist. For example, RL can be used to decide what additional samples are best to be labeled in an __Active Learning__ setting as part of a supervised learning predictor.
+
+A similar experience with regarding to getting started with ML was with Neural Networks, or if you really want to leave impression, Deep Neural Networks (DNN). I'm happy that I've started with simpler to understand model classes, such as a Decision Tree, k-Nearest Neighbours, or a Linear Regression. With the simpler model classes, __Feature Engineering__ is a good practice. This is the process of understanding the problem and the data, and helping the model get access to the information. Neural networks are more flexible, and they can be used to automaticly extract features without implicit guidance. With todays software support, neural networks are very accessible and often the most promissing direction. But the moral should be that RL is orthogonal, and should be learned as its own paradigm, and then when we get to solving tasks we'll pick the right tools and use them as needed.
