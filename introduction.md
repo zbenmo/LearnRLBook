@@ -60,7 +60,7 @@ If the checking was not automated, we could not have the online banking and shop
 The scale of operations requires automation.
 
 Where does __Reinforcement Learning__ (RL) fit into those exciting development in software engineering? RL is a ML way of learning the control logic for automated-agents.
-What we learn with RL is a controller, or __policy__ that the agent then follows and thus achieves one or more
+What we learn with RL is a controller, or a __policy__ that the agent then follows and thus achieves one or more
 desired behavior in the environment in which it is operating.
 We will dive more into the relations among RL and other types of ML and software paradigms in  [Chapter 1](chapter-01.md).
 
